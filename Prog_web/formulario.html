@@ -46,6 +46,14 @@
                 <input type="text" name="tellNumber" id="tellNumberid">
             </td>
         </tr>
+        <tr>
+            <td>
+                EMAIL
+            </td>
+            <td>
+                <input type="text" name="email" id="emailid">
+            </td>
+        </tr>
     </table>
     <input type="button" onclick="fnValidarCampos('name')" value="Enviar">
     <script>
@@ -63,6 +71,15 @@
             }
 
     }
+    </script>
+    <script language="JavaScript">
+        function ValidacaoEmail(field){
+            usuario = field.value.substring(0, field.value.indexOf("@"));
+            dominio = field.value.substring(field.value.indexOf("@")+1, field.value.length)
+            alert(usuario);
+            alert(dominio);
+        
+        }
     </script>
 </body>
 
