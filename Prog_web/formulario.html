@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programação Web</title>
+</head>
+
+<body>
+    <p>Formulário</th>
+    <table class="prog_web_table" border="1">
+        <tr>
+            <td colspan="100%">
+                CADASTRO DE CLIENTES
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                NOME
+            </td>
+            <td>
+                <input type="text" name="name" id="nameid">
+            </td>
+        <tr>
+            <td>
+                CPF
+            </td>
+            <td>
+                <input type="text" name="cep" id="cpfid">
+            </td>
+        </tr>
+        <td>
+            ENDEREÇO
+        </td>
+        <td>
+            <input type="text" name="address" id="addressid">
+        </td>
+        <tr>
+            <td>
+                TELEFONE
+            </td>
+            <td>
+                <input type="text" name="tellNumber" id="tellNumberid">
+            </td>
+        </tr>
+    </table>
+    <input type="button" onclick="fnValidarCampos('name')" value="Enviar">
+    <script>
+        function fnValidarCampos(){
+            if(document.getElementById("nameid").value == 0){
+                alert("Campo nome obrigatorio")
+            } else if(document.getElementById("cpfid").value== 0){
+                alert("Campo CPF obrigatorio")
+            } else if(document.getElementById("addressid").value== 0){
+                alert("Campo Endereço obrigatorio")
+            } else if(document.getElementById("tellNumberid").value == 0){
+                alert("Campo Telefone obrigatorio")
+            } else{
+                (console.log('Uau'))
+            }
+
+    }
+    </script>
+</body>
+
+</html>
